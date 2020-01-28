@@ -1,5 +1,87 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-flow: column;
+}
+.poke-list {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+}
+.poki-container {
+  position: relative;
+}
+
+.poke-compare-list {
+  padding: 50px;
+  text-align: center;
+}
+
+.objectTile {
+  padding: 0 20px;
+}
+
+#styledModal {
+  z-index: 2;
+  background: #fff;
+  width: 300px;
+  text-align: center;
+  padding: 1.5em;
+  margin: 1em auto;
+  border: 0;
+  border-top: 5px solid #69c773;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+#styledModal::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.attribute {
+  text-decoration: underline;
+}
+
+.poki-container .poki-image {
+  /* background-image: url(); */
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.poki-image:hover {
+  background: yellow;
+  opacity: 0.8;
+}
+.poki-image .btn {
+  display: none;
+}
+.horizontal-table {
+  display: flex;
+  flex-flow: row;
+}
+.checkbox {
+  padding-right: 10px;
+}
+.poki-image:hover .btn {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(70, 43, 223);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .App-logo {
